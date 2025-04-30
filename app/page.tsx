@@ -40,6 +40,16 @@ export default function App() {
             <h1>Hello {user?.username}</h1>
             <button onClick={signOut}>Sign out</button>
 
+            <video width="320" height="240" controls preload="none">
+              <source src="https://amplify-d1sexobngiv82h-main-bra-mys3bucketad696188-ijyrqxd0eqyb.s3.us-east-2.amazonaws.com/private/us-east-2%3A79b54399-9e4d-c2bb-f076-00154e51b719/slice+(online-video-cutter.com)+(1).mp4" type="video/mp4" />
+              <track
+                kind="subtitles"
+                srcLang="en"
+                label="English"
+              />
+              
+            </video>
+
           {/* StorageBrowser Component */}
           <h2>Your Files</h2>
           <StorageBrowser />
